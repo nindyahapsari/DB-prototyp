@@ -1,26 +1,45 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Navbar></Navbar>
+  <Sidebarright></Sidebarright>
+  <Map></Map>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue'
+import Map from './components/Map.vue'
+import Sidebarright from './sidebars/Sidebar.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navbar,
+    Map,
+    Sidebarright
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html{
+  font-size: 16px;
+}
+
+#app {
+  font-family: Open Sans;
+}
+
+body {
+  overflow: hidden;
+}
+
+.mapboxgl-ctrl-attrib {
+  display: none;
+}
+
 </style>
