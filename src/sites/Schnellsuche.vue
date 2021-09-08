@@ -2,13 +2,13 @@
   <div>
     <Schnellfilter></Schnellfilter>
     <hr>
-    <div> Here is the other filter</div>
+    <Ergebnissfilter></Ergebnissfilter>
     <hr>
     <div class="wrapper">
       <div class="container">
         <div class="row">
           <div class="col-6 d-flex flex-row">
-            <span>O</span>
+            <span>*</span>
             <p>Gemerkt: 15</p>
           </div>
           <div class="col-6 d-flex justify-content-end parent">
@@ -36,6 +36,7 @@
 <script>
 import Table from '../components/Table.vue';
 import Schnellfilter from '../components/SchnellsucheFilter.vue';
+import Ergebnissfilter from '../components/ErgebnissFilter.vue';
 
 export default {
 
@@ -43,17 +44,13 @@ export default {
   components: {
     Table, 
     Schnellfilter,
+    Ergebnissfilter
   },
 }
 
 
 </script>
 <style scoped>
-
-.form-control {
-  height: 1.5em !important;
-  border: 1px solid #222222 !important;
-}
 
 .wrapper {
   display: flex;
