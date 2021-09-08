@@ -1,5 +1,8 @@
 # prototype-dbimm
 
+Design prototype to evaluate the product.
+Build with Vue, Bootstrap and Css
+
 ## Project setup
 ```
 npm install
